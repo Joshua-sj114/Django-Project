@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC</title>
+    <link rel="icon" href="emc.png">
+</head>
+<body>
+    
+
+    <h1>
+       <b> these are our User list</b>
+    </h1>
+    <ul>
+        {% for u in userlist %}
+        <li>{{u.name}}</li>
+        <li>{{u.age}}</li> 
+        <br>
+        <br>
+        {% endfor %}
+    </ul>
+
+    <h1>
+        <b> these are our Product list</b>
+
+     </h1>
+     <ul>
+         {% for p in products %}
+         <li><a href="prod_details/{{p.product_id}}">{{p.product_id}}</a></li>
+         
+         {% endfor %}
+     </ul>
+  
+    
+
+</body>
+</html>
